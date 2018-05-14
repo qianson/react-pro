@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="screen-orientation" content="portrait"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <style>
+        *{margin:0;padding:0}
+        html{
+            font-size: calc(100vw/7.5)
+        }
+        body{padding:0.59rem 0.55rem;}
+        h2{font-size:0.42rem;
+            margin-bottom:0.39rem;
+        }
+        h3,h4,h5{
+            font-size: 0.34rem;margin-bottom:0.2rem;}
+        p{width: 100%;height: auto; word-wrap:break-word;word-break:break-all;overflow: hidden;color:#666;font-size:0.34rem;line-height:0.54rem;}
+        img{ max-width: 100%;margin:0.18rem 0 0.41rem;}
+        img[data-w-e]{ margin:0;}
+        li{list-style-position:inside;color:#666;}↵
+    </style>
+</head><body>
+<script>
+    var str = '<h2>111</h2><div></div><div></div><h2>111</h2>';
+    var reg = /^(<h2>.*?<\/h2>){1}/;
+    var newStr = str.replace(reg,'')
+    alert(newStr)
+</script>
+</body></html>
